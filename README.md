@@ -4,6 +4,8 @@ Gonzalo Oyanedel Vial (gov@chicagobooth.edu)
 
 Results: https://goyanedelv.github.io/santiago/
 
+This is the result of my final project for Applied Data Analysis @ UChicago. Many thanks to professor D. Sahota for his great guidance.
+
 ## Repo structure
 
 This repo contains the code and data used to run the data science pipeline of the project and the scripts used in the data engineering pipeline (excluding the raw data). For the web-scrapping portion, please review the following public repos: [toctoc-scrapper](https://github.com/goyanedelv/toctoc-scrapper) and [portal-inmobiliario-scrapper](https://github.com/goyanedelv/portal-inmobiliario-scrapper).
