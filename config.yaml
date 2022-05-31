@@ -1,0 +1,55 @@
+# Experiment labels
+label: experiment_044
+comment: XGBoost re-tuning!
+
+# Test size
+test_size: 0.25
+kf: 5
+random_state: 1
+
+# Activate models
+glm: False
+lasso: False
+ridge: False
+svm: False
+rf: False
+xgboost: True
+neuralnetwork: False
+
+# Parameters for hypertuning
+parameters_xgb:
+  learning_rate: [0.06]
+  max_depth: [4]
+  n_estimators: [76]
+
+parameters_rf:
+  n_estimators: [180]
+  max_depth: [15]
+
+parameters_nnet:
+  hidden_layer_sizes: [70]
+  alpha: [0.015]
+  activation: ["logistic"]
+  max_iter: [1000]
+
+parameters_svm:
+  kernel: ["poly"]
+  C: [0.25]
+  degree: [2]
+
+# Lasso
+lasso_alpha_initial: 5
+lasso_alpha_final: -2
+lasso_linspace: 100
+lasso_max_iter: 35000
+
+# Ridge
+ridge_alpha_initial: 5
+ridge_alpha_final: -2
+ridge_linspace: 100
+
+# Best model
+best_model:
+  learning_rate: 0.06
+  max_depth: 4
+  n_estimators: 70
